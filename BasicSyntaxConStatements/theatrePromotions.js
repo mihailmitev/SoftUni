@@ -2,8 +2,7 @@ function theatrePromotions(day, age) {
     let price = 0
     if (age < 0 || age > 123 || day == !'Holiday' || day == !'Weekend' || day == !'Weekday') {
         console.log('Error!');
-    }
-    else if (day === 'Weekday') {
+    } else if (day === 'Weekday') {
         if (age >= 0 && age <= 18) {
             price = 12
         } else if (age > 18 && age <= 64) {
@@ -31,7 +30,6 @@ function theatrePromotions(day, age) {
         }
         console.log(`${price}$`);
     }
-
 
 }
 
