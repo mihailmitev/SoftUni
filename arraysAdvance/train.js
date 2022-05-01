@@ -1,6 +1,5 @@
 function train(input) {
     let train = input.shift().split(' ').map(Number);
-    console.log(train);
     let maxCapacity = Number(input.shift());
     for (let command of input) {
         let tokens = command.split(' ')
