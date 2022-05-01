@@ -1,24 +1,18 @@
-function max (arr){
+function max(arr) {
     let longestSequence = [];
     let leftMostIndex = 0;
- 
- 
     for (let i = 0; i < arr.length; i++) {
         currentEl = Number(arr[i]);
         let currentSequence = [currentEl];
- 
- 
         for (let j = i + 1; j < arr.length; j++) {
             let nextEl = Number(arr[j]);
- 
+
             if (nextEl === currentEl) {
                 currentSequence.push(nextEl)
             } else {
                 break;
             }
- 
         }
- 
         if (currentSequence.length > longestSequence.length) {
             longestSequence = [];
             for (let j = 0; j < currentSequence.length; j++) {
@@ -26,7 +20,7 @@ function max (arr){
             }
         } else if (currentSequence.length === longestSequence.length) {
             if (i < leftMostIndex) {
-                leftmostIndex = i;
+                leftMostIndex = i;
             }
         }
     }

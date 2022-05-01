@@ -6,8 +6,11 @@ function arrayRotation(list, rotation) {
         }
         let lastIndex = list.length - 1
         list[lastIndex] = firstElement
+        console.log(list);
 
     }
     console.log(list.join(' '));
+
 }
-arrayRotation([51, 47, 32, 61, 21], 2)
+ arrayRotation([51, 47, 32, 61, 21], 2)
+arrayRotation([32, 21, 61, 1], 4)
